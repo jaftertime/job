@@ -1,0 +1,13 @@
+<head>
+<meta charset="utf-8">
+<title>update_by_name</title>
+</head>
+<body>
+    <form action="/update-data/" method="post">
+        {% csrf_token %}
+        <p>name:<input type="text" name="name" ></p>
+        <p>height:<input type="text" name="height" ></p>
+        <p><input type="submit" value="Update_record"></p>
+    </form>
+    <p>{{ result }}</p>
+</body>

@@ -1,0 +1,12 @@
+<head>
+<meta charset="utf-8">
+<title>delete_by_name</title>
+</head>
+<body>
+    <form action="/delete-data/" method="post">
+        {% csrf_token %}
+        <p>name:<input type="text" name="name" ></p>
+        <p><input type="submit" value="Delete_record"></p>
+    </form>
+    <p>{{ result }}</p>
+</body>

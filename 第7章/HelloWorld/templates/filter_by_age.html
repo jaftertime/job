@@ -1,0 +1,15 @@
+<head>
+<meta charset="utf-8">
+<title>filter_by_age</title>
+</head>
+<body>
+    <form action="/filter-data/" method="post">
+        {% csrf_token %}
+        <p>age:<input type="text" name="age" value= {{age_input}}></p>
+        <p><input type="submit" value="Query_record"></p>
+    </form>
+    <p>Query results are : </p>
+    {% for xx in result %}
+      <p>{{ xx }}</p>
+    {% endfor %}
+</body>

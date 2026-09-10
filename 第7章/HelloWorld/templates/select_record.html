@@ -1,0 +1,14 @@
+<head>
+<meta charset="utf-8">
+<title>Select_record</title>
+</head>
+<body>
+    <form action="/query-data/" method="post">
+        {% csrf_token %}
+        <p><input type="submit" value="Select_record"></p>
+    </form>
+    <p>Select results are : </p>
+    {% for xx in result %}
+      <p>{{ xx }}</p>
+    {% endfor %}
+</body>

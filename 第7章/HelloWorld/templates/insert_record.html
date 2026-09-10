@@ -1,0 +1,14 @@
+<head>
+<meta charset="utf-8">
+<title>Insert_record</title>
+</head>
+<body>
+    <form action="/add-data/" method="post">
+        {% csrf_token %}
+        <p>name:   <input type="text" name="name"></p>
+        <p>age:    <input type="text" name="age"></p>
+        <p>height: <input type="text" name="height"></p>
+        <p><input type="submit" value="Add_record"></p>
+    </form>
+    <p>Operation result is : {{ result }}</p>
+</body>
